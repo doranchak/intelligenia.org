@@ -1,0 +1,156 @@
+<html>
+
+<head>
+<title>Lorenz</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+
+
+<meta name="Microsoft Theme" content="none, default"><meta name="Microsoft Border" content="none"></head>
+
+<body link="#008000" vlink="#008000" alink="#008000" background="MB003.JPG" leftmargin="20">
+
+<p align="center"><font face="Times New Roman" size="5" color="#0000FF"><strong>The Lorenz
+SZ40/42 cipher attachment - FISH and TUNNY</strong></font></p>
+
+<p><strong><font face="Times New Roman" size="4">In 1940 a listening unit of the British
+Police Force which was assigned to monitor the airwaves for possible activity by German
+agents intercepted a new type of transmission - a non-Morse signal. The German military
+were using a new type of encryption device to encipher messages transmitted, by both radio
+and land line, in the international Baudot teleprinter code. Two different cipher machines
+were involved - the<em> Siemens und Halske T52</em>; a stand-alone enciphering teletype
+device and the <em>Lorenz SZ40</em> - and later the <em>SZ42</em> - which was an
+enciphering attachment intended for use with a standard teleprinter and named <i><em>Schl</em>ü<em>sselzusatz</em></i>
+[key-addition] by the German military authorities.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">Bletchley Park gave the codename 'Fish'
+to the overall teleprinter traffic and the codename 'Tunny'&nbsp; to the material
+enciphered by the <em>Lorenz SZ40/42</em>.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">The first real break into Tunny traffic
+occurred on August 30, 1941 when a cipher clerk in Vienna sent a long message - four
+thousand or so characters - to his opposite number in Athens. When he had finished this
+formidable typing effort he received a reply which was the German equivalent of &quot;I
+didn't get all that. Please send it again..!&quot;. So he did - using, against all
+established principles of cipher security, the same machine settings that he had used for
+the first transmission. He also used a number of abbreviations [e.g.<em> 'Spruchnummer'</em>
+became<em> 'Spruchnr' ,</em> etc.]. This egregious error was the chance for which BP was
+waiting and a team headed by Colonel [later Brigadier] John Tiltman deciphered the message
+in short order.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">Tiltman passed the material along to a
+young Cambridge mathematician, Bill Tutte, who immediately set to work in a attempt to
+determine the principle by which the <em>Lorenz</em> machine worked. Incredibly, only four
+months later Tutte and BP had a working knowledge of the internals of the machine and were
+able to build an electro-mechanical analogue - the Tunny machine.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">The <em>Lorenz SZ40/42</em> was a very
+complex cipher device and no brief presentation such as this can do justice to its
+complexity or attempt to do more than just present an overall, much simplified, view of
+its operational principles.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">The <em>SZ40/42</em> worked thus... A
+character was entered from a teleprinter - either from the keyboard or from tape. Each
+character in the Baudot telegraphic code consisted of five 'bits'&nbsp; - each punched
+into the tape as a 'hole' or a 'space'. The letter 'A' was represented as
+'hole/hole/space/space/space', or in modern, computer terms 11000. <em>Lorenz </em>acted
+upon each individual 'bit' by adding a two part key, modulo two - in modern terms, XOR.
+The <em>SZ40/42</em> had twelve wheels in total - five designated 'K' or <em>Chi</em>
+wheels, five designated 'S' or <em>Psi</em> wheels, and two 'motor' wheels M1 and M2. The
+'K' wheels acted first, in unison, on the character - each wheel on one individual &nbsp;
+'bit'. Through a series of relays they added a random key to the input character. A second
+key was added by the 'S' wheels, also acting in unison. The block of five 'K' wheels moved
+once with each character input while movement of the 'S' wheels, which also moved as a
+block of five but not with every input, was controlled by the settings of M1 and M2. While
+the 'K' wheels moved with every character processed the 'S' wheels moved randomly, on
+average only about two thirds of the time.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">A particular 'K' or 'S' wheel contributed
+to the key in the following way.&nbsp; Each wheel carried a different number of pins or
+'camlets' - K1/41, K2/31, K3/29, K4/26, K5/23: S1/43, S2/47, S3/51, S4/53, S5/59: M1/61,
+M2/37 - the numbers of pins on each wheel being relatively prime to those on all other
+wheels. The pins were selected 'on' or 'off' as part of the machine setup. In the case of
+the 'K' and 'S' wheels if a pin was 'on', the state of the corresponding component of the
+five-bit character was altered - if the pin was 'off' the component remained unaltered..
+The M1 wheel moved with the 'K' wheels. If the pin on the M1 wheel was 'on' then the M2
+wheel moved with the next input. If the pin on the M2 was 'off' the 'S' wheels moved,
+together as a unit, with the next character input: if the M2 pin was 'on', the 'S' wheels
+did not move. Note the reverse logic between M1 and M2.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">An example is given in the table below:</font></strong></p>
+
+<table border="1" width="100%" style="border: 0px none rgb(255,255,255)" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+  <tr>
+    <td width="55%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Times New Roman" size="4">Plaintext '<u>A</u>' in the Baudot Code is represented by
+    the 'five-bit'</font></strong></td>
+    <td width="45%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px" align="left" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><strong><font face="Courier New" size="4">11000</font></strong></td>
+  </tr>
+  <tr>
+    <td width="55%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Times New Roman" size="4">'K' wheels - pins off/on/off/on/off - change each bit
+    accordingly</font></strong></td>
+    <td width="45%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Courier New" size="4">10010</font></strong></td>
+  </tr>
+  <tr>
+    <td width="55%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Times New Roman" size="4">Add this pair - Mod2/XOR&nbsp;</font></strong></td>
+    <td width="45%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Courier New" size="4">01010</font></strong></td>
+  </tr>
+  <tr>
+    <td width="55%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Times New Roman" size="4">'S' wheels - pins on/off/off/off/on - change each bit
+    accordingly</font></strong></td>
+    <td width="45%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Courier New" size="4">11011</font></strong></td>
+  </tr>
+  <tr>
+    <td width="55%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Times New Roman" size="4">Add - Mod2/XOR - for a ciphertext character output of '<u>Z</u>'</font></strong></td>
+    <td width="45%" style="border-left: 0px none rgb(255,255,255); border-right: 0px; border-top: 0px; border-bottom: 0px"><strong><font face="Courier New" size="4">10001</font></strong></td>
+  </tr>
+</table>
+
+<p align="left"><strong><font face="Times New Roman" size="4">[Note: In practice, the
+actions of the 'K' and 'S' wheels were simultaneous - not sequential]</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">Thus - if 'A' is the character typed into
+the <em>Lorenz</em> - 'Z' is transmitted. Since the SZ40/42 used the entire character set
+of the Baudot code the output was not restricted to the A-Z letters of the alphabet.</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">In another example: the plaintext...<br>
+&nbsp;&nbsp;&nbsp; AUF BEFEHLD DES OBERSTEN BEFEHLSHABERS SIND IM FALLE...<br>
+...resulted in the following ciphertext...<br>
+&nbsp;&nbsp;&nbsp; AICMRAGXCXQYUUMCRIJUMO6CBXWMDDCYUWKRBWR2F1PUVYLK6W2QS665BR46LTEKTM...</font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">Once Bletchley Park had developed a&nbsp;
+hand method for breaking into the <em>Lorenz</em> traffic it was essential that the
+process be speeded up and a search for a means of automating the key search process began.
+The rest is history. The search of course culminated in the development - by Tommy Flowers
+and his Post Office team, and many others - of Colossus and of Tunny, an
+electro-mechanical analogue of the <em>Lorenz</em> cipher attachment. It is hoped that
+simulations of the Lorenz machine and also of Colossus and Tunny will be released shortly
+by the <a href="csg/index.htm">Crypto Simulation Group</a>. </font></strong></p>
+
+<p><strong><font face="Times New Roman" size="4">For a more detailed description of the <em>SZ40/42</em>
+machines and much more on the part played by Colossus the following references may prove
+useful:</font></strong></p>
+
+<p align="left"><strong><font face="Times New Roman" size="4">Reference:<br>
+1:&nbsp;&nbsp;&nbsp; Carter, F., <em>Codebreaking with the Colossus Computer,</em>
+Bletchley Park Report&nbsp; #1, 1996 <br>
+2:&nbsp;&nbsp;&nbsp; ----------, <em>Codebreaking with the Colossus Computer,</em>
+Bletchley Park Report&nbsp; #3, 1997&nbsp;<a href="bp_reports.htm">[information]</a><br>
+3:&nbsp;&nbsp;&nbsp; ----------, <em>Codebreaking with the Colossus Computer,</em>
+Bletchley Park Report&nbsp; #4, 1997 <br>
+4:&nbsp;&nbsp;&nbsp; Davies, D.W., <em>The Lorenz Cipher Machine SZ42</em>, Cryptologia
+XIX(1) pp 39-61, 1995<br>
+5:&nbsp;&nbsp;&nbsp; Erskine, R.,<em> Tunny Decrypts</em>, Cryptologia XII(1) pp 59-61,
+1988<br>
+6:&nbsp;&nbsp;&nbsp; Fox, B. &amp; Jeremy Webb, <em>Colossal Adventures</em>, New
+Scientist Vol.154/No.2081, 1997<br>
+7:&nbsp;&nbsp;&nbsp; Hinsley, F.H. &amp; Alan Stripp, <em>Codebreakers</em>, Oxford
+University Press, 1993&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+8:&nbsp;&nbsp;&nbsp; Tutte, W.T., <em>Fish and I</em>, University of Waterloo lecture
+transcript, 1998 <a href="http://home.cern.ch/~frode/crypto/tutte.html">[download]</a> </font></strong></p>
+
+<p align="left"><strong><font face="Times New Roman" size="4">Audio: To hear the sound of
+a <em>SZ40/42</em> transmission <a href="images/sz42.wav">click here</a> [.wav capability
+required]</font></strong></p>
+
+<p align="center"><font size="4"><strong><!--webbot bot="Navigation" S-Type="global" S-Orientation="horizontal" S-Rendering="graphics" B-Include-Home="TRUE" B-Include-Up="TRUE" startspan --><nobr>[&nbsp;<a href="./">Home</a>&nbsp;]</nobr> <nobr>[&nbsp;<a href="SZ42_T52.htm">Up</a>&nbsp;]</nobr><!--webbot bot="Navigation" endspan i-checksum="54690" --></strong></font></p>
+</body>
+</html>
