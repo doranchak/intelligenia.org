@@ -5,19 +5,14 @@ Mirror of David H. Hamer's cryptology web site, extracted from Wayback Machine.
 
 Wayback Machine source: [https://web.archive.org/web/20220403160048/http://intelligenia.org/](https://web.archive.org/web/20220403160048/http://intelligenia.org/).
 
+Some missing material was found here:  [http://ciphe.narod.ru/lib/book029.htm](http://ciphe.narod.ru/lib/book029.htm).
+
 ***
 
 # Missing content:
 
 Here's a list of everything known to be missing from the archives of Hamer's original site:
 
-https://doranchak.github.io/intelligenia.org/Enigma1.htm
-
- * The larger image
- * "Enigma - download internal wiring information"
- * "Further reading  - a bibliography"
- * "Enigma and NEMA - selling prices"
- 
 https://doranchak.github.io/intelligenia.org/begleitbuecher.htm
 
  * "M1290"
@@ -28,10 +23,6 @@ https://doranchak.github.io/intelligenia.org/begleitbuecher.htm
 https://doranchak.github.io/intelligenia.org/u-85gal.htm
 
  * Many images
- 
-https://doranchak.github.io/intelligenia.org/SZ42_T52.htm 
-
- * Images
  
 https://doranchak.github.io/intelligenia.org/lorenz.htm
 
@@ -47,15 +38,9 @@ https://doranchak.github.io/intelligenia.org/bp_reports.htm
 
  * "BP Reports 2"
 
-https://doranchak.github.io/intelligenia.org/cipher_machines.htm
-
- * "The Siemens SFM T43"
- * "The Hagelin M-209"
- * "NEMA"
- 
 https://doranchak.github.io/intelligenia.org/hc9.htm
 
- * Image
+ * Larger image
  
 https://doranchak.github.io/intelligenia.org/download.htm
 
