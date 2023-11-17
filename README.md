@@ -7,66 +7,19 @@ Wayback Machine source: [https://web.archive.org/web/20220403160048/http://intel
 
 Some missing material was found here:  [http://ciphe.narod.ru/lib/book029.htm](http://ciphe.narod.ru/lib/book029.htm).
 
+And here:  [https://web.archive.org/web/20151002144919/http://home.comcast.net/~dhhamer/](https://web.archive.org/web/20151002144919/http://home.comcast.net/~dhhamer/)
+
+Another old site of his is preserved here:  [https://web.archive.org/web/20050207145719/http://www.eclipse.net/~dhamer/](https://web.archive.org/web/20050207145719/http://www.eclipse.net/~dhamer/)
+
 ***
 
 # Missing content:
 
 Here's a list of everything known to be missing from the archives of Hamer's original site:
 
-https://doranchak.github.io/intelligenia.org/begleitbuecher.htm
-
- * "M1290"
- * "M5270"
- * "M8434" 
- * Image on "Kurzsignalheft" page
- 
-https://doranchak.github.io/intelligenia.org/u-85gal.htm
-
- * Many images
- 
-https://doranchak.github.io/intelligenia.org/lorenz.htm
-
- * "SZ40/42 transmission sound file" (.wav)
- 
-https://doranchak.github.io/intelligenia.org/csg/index.htm
-
- * Images
- * "Introduction to CSG"
- * "CSG Gallery"
- 
-https://doranchak.github.io/intelligenia.org/bp_reports.htm
-
- * "BP Reports 2"
-
-https://doranchak.github.io/intelligenia.org/hc9.htm
-
- * Larger image
- 
-https://doranchak.github.io/intelligenia.org/download.htm
-
- * "Enigma Variations: An Extended Family of Machines" (.pdf)
- 
-https://doranchak.github.io/intelligenia.org/bp_sites.htm
-
- * Image
- * "BP Visiting Research Scholars"
- 
-https://doranchak.github.io/intelligenia.org/pubs.htm
-
- * "Enigma: Actions Involved in the ‘Double-Stepping’ of the Middle Rotor" (.pdf) 
- * "Enigma Variations; An Extended Family of Machines" (.zip)
- * "M2114: A Naval Enigma" (.zip)
- * "G-312: An Abwehr Enigma" (.zip)
- * "A KG-13 Arrives at NCM" (.pdf)
- * "Eye Spy Magazine list of published articles"
- 
-https://doranchak.github.io/intelligenia.org/images.htm
-
- * Many images
- 
 https://doranchak.github.io/intelligenia.org/rip.htm
 
- * Many images
+ * Some images
  
  
 
